@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sık Kullanılanlar</title>
+    <link rel="icon" type="image/x-icon" href="images\DEU_Logo_beyaz.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c2cc11dfc2.js"></script>
+            
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images\DEU_Logo_beyaz.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="Course.html">Sık Kullanılanlar</a></li>
+                    <li><a href="Blog.html">Hizmetler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Sık Kullanılanlarınız</h1>
+    </section>
+ <!------- Sık Kullanılanlar --------->
+ <section class="wrapper3">
+    <div class="course">
+    <div class="row">
+        <div class="course-col">
+            <div class="content">
+                <img src="images\DEU_Logo_beyaz.png" alt="">
+                <h3>Kütüphane</h3>
+            </div>
+        </div>
+        <div class="course-col">
+            <div class="content">
+                <img src="images\DEU_Logo_beyaz.png" alt="">
+                <h3>Meslek Yüksekokulları</h3>
+            </div>
+        </div>
+        <div class="course-col">
+            <div class="content">
+                <img src="images\DEU_Logo_beyaz.png" alt="">
+                <h3>Fakülteler</h3>
+            </div>
+        </div>
+        <div class="course-col">
+            <div class="content">
+                <img src="images\DEU_Logo_beyaz.png" alt="">
+                <h3>Dergiler</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!---Footer-->
+<section class="footer">
+    <h4>Hakkımızda</h4>
+    <p>Altta yer alan telefon numaramız ve mail adresimize mail atarak yardım alabilirsiniz.
+       <br>Telefon:+90(232) 412 12 12<br>dokuzeyluluniversitesi@hs01.kep.tr
+    </p>
+    </div>
+    <br>
+    <p>@Deü Tüm Birimler</p>
+    </section>
+<!--- javascript code from here---> 
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu()
+        {
+            navlinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "sikKullanilanlar": [
+    {
+      "title": "Kütüphane",
+      "imageSrc": "images/DEU_Logo_beyaz.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Meslek Yüksekokulları",
+      "imageSrc": "images/DEU_Logo_beyaz.png",
+      "links": [
+        "MYO Link 1",
+        "MYO Link 2",
+        "MYO Link 3"
+      ]
+    },
+    {
+      "title": "Fakülteler",
+      "imageSrc": "images/DEU_Logo_beyaz.png",
+      "links": [
+        "Fakülte Link 1",
+        "Fakülte Link 2",
+        "Fakülte Link 3"
+      ]
+    },
+    {
+      "title": "Dergiler",
+      "imageSrc": "images/DEU_Logo_beyaz.png",
+      "links": [
+        "Dergi Link 1",
+        "Dergi Link 2",
+        "Dergi Link 3"
+      ]
+    }
+  ],
+  "hizmetKategorileri": [
+    {
+      "title": "Kütüphane",
+      "icon": "fa-solid fa-book fa-3x ",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Meslek Yüksekokulları",
+      "icon": "fa-solid fa-graduation-cap fa-3x",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Yüksekokulları",
+      "icon": "fa-solid fa-paperclip fa-3x",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Lorem İpsum",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Dolar",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Hizmetliler",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Kütüphane",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    }
+  ]
+}

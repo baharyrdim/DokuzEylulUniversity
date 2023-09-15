@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEÜ Web Tasarım</title>
+    <link rel="icon" type="image/x-icon" href="images\DEU_Logo_beyaz.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c2cc11dfc2.js"></script>
+    <script src="https://kit.fontawesome.com/c05869e6b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <script src="package.json"></script>
+    <script src="scripts.js"></script>
+
+            
+</head>
+<body>
+    <section class="header" id="top header">
+        <nav>
+            <a href="index.html"><img src="images\DEU_Logo_beyaz.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="Course.html">Sık Kullanılanlar</a></li>
+                    <li><a href="Blog.html">Hizmetler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="textbox">
+        <h1>Dokuz Eylül Üniversitesi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quod, eum laboriosam voluptas distinctio natus est mollitia<br> voluptatibus saepe cum facere quasi voluptate. Veniam officiis ducimus corporis reiciendis nesciunt ex.
+        </p>
+        <a href="http://localhost:8888/StajWebSitesi-main/login.php" class="hero-btn">Giriş Yap</a>
+    </div>
+    </section>
+   <!------- Sık Kullanılanlar --------->
+<section class="wrapper">
+    <div class="course">
+    <h1>Sık Kullanılanlar</h1>
+    <div class="row" id="sikKullanilanlarContainer">
+        <div class="course-col">
+            <div class="content">
+                <img src="images\DEU_Logo_beyaz.png" alt="">
+                <button class="dropbtn" type="button"
+                id="dropdownMenuButton"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false">Kütüphane</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <div class="row">
+                        <div class="column">
+                          
+                          <img src="images\banner2.jpg" alt="">
+                        </div>
+                        <div class="column">
+                          
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                        <div class="column">
+                          
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!-------Tüm Hizmetler------>
+    <section class="wrapper1">
+        <div class="services">
+        <h1> Hizmet Kategorileri</h1>
+        <div class="row" id="hizmetlerContainer">
+            <button class="service-col">
+                <div class="content">
+                    <i class="fa-solid fa-book  fa-3x" style="color: #DBA11C;"></i>
+                    
+                    <h3>Kütüphane</h3>
+                    <div class="dropdown-content">
+                        <a href="#">Kütüphane Link 1</a>
+                        <a href="#">Kütüphane Link 2</a>
+                        <a href="#">Kütüphane Link 3</a>
+                    </div>
+                
+                </div>
+            </button>
+            <!-- Diğer hizmet kartları burada -->
+        </div>
+    </div>
+    </section>
+    
+    
+    
+<!--call to action -->
+ <section class="cta1">
+    <div class="cta">
+     <h1>Eksik birimler olduğunu düşünüyorsanız bizimle<br>iletişime geçebilirsiniz</h1>
+     <a href="contact.html" class="hero-btn">Bize Ulaşın</a>
+    </div>
+ </section>
+ <!---Footer-->
+ <section class="footer">
+     <h3>Altta yer alan telefon numaramız ve mail adresimize mail atarak yardım alabilirsiniz.</h3>
+        <h2>Telefon:+90(232) 412 12 12<br>dokuzeyluluniversitesi@hs01.kep.tr</h2>
+     
+     <br>
+     <p>@Deü Tüm Birimler</p>
+     </section>
+     <!--Sık Kullanılanlar JSON data çekip işleme-->
+     <script>
+        // Yukarıdaki JSON verisi
+        var jsonData = {
+            "sikKullanilanlar": [
+              {
+                "title": "Kütüphane",
+                "imageSrc": "images/DEU_Logo_beyaz.png",
+                "links": [
+                  "Kütüphane Link 1",
+                  "Kütüphane Link 2",
+                  "Kütüphane Link 3"
+                ]
+              },
+              {
+                "title": "Meslek Yüksekokulları",
+                "imageSrc": "images/DEU_Logo_beyaz.png",
+                "links": [
+                  "MYO Link 1",
+                  "MYO Link 2",
+                  "MYO Link 3"
+                ]
+              },
+              {
+                "title": "Fakülteler",
+                "imageSrc": "images/DEU_Logo_beyaz.png",
+                "links": [
+                  "Fakülte Link 1",
+                  "Fakülte Link 2",
+                  "Fakülte Link 3"
+                ]
+              },
+            ],
+            
+          }
+          
+    
+        // JSON verilerini kullanarak işlem yapabilirsiniz.
+        // Örneğin, "sikKullanilanlar" bölümündeki başlıkları ve bağlantıları ekrana yazdırmak için:
+    
+        var sikKullanilanlar = jsonData.sikKullanilanlar;
+        var sikKullanilanlarContainer = document.getElementById('sikKullanilanlarContainer');
+    
+        sikKullanilanlar.forEach(function(item) {
+            var title = item.title;
+            var links = item.links;
+    
+            var courseCol = document.createElement('div');
+            courseCol.className = 'course-col';
+    
+            var content = document.createElement('div');
+            content.className = 'content';
+    
+            var img = document.createElement('img');
+            img.src = item.imageSrc;
+            img.alt = title;
+    
+            var button = document.createElement('button');
+            button.className = 'dropbtn';
+            button.textContent = title;
+    
+            var dropdownContent = document.createElement('div');
+            dropdownContent.className = 'dropdown-content';
+    
+            links.forEach(function(link) {
+                var a = document.createElement('a');
+                a.href = link;
+                a.textContent = link;
+                dropdownContent.appendChild(a);
+            });
+    
+            content.appendChild(img);
+            content.appendChild(button);
+            content.appendChild(dropdownContent);
+            courseCol.appendChild(content);
+    
+            sikKullanilanlarContainer.appendChild(courseCol);
+        });
+    </script>
+    <!--Tüm Hizmetler JSON data çekip işleme-->
+    <script>
+        // Yukarıdaki JSON verisi
+        var jsonData = {
+            "hizmetKategorileri": [
+    {
+      "title": "Kütüphane",
+      "icon": "fa-solid fa-book fa-3x ",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Meslek Yüksekokulları",
+      "icon": "fa-solid fa-graduation-cap fa-3x",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Yüksekokulları",
+      "icon": "fa-solid fa-paperclip fa-3x",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Lorem İpsum",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Dolar",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Hizmetliler",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+      "title": "Kütüphane",
+      "imageSrc": "images/deu-logo-mavi.png",
+      "links": [
+        "Kütüphane Link 1",
+        "Kütüphane Link 2",
+        "Kütüphane Link 3"
+      ]
+    },
+    {
+        "title": "Hizmet#7",
+        "imageSrc": "images/deu-logo-mavi.png",
+        "links": [
+          "Kütüphane Link 1",
+          "Kütüphane Link 2",
+          "Kütüphane Link 3"
+        ]
+      }
+  ]
+            // Önceki JSON verisi buraya gelecek
+        };
+    
+        // "Hizmetler" bölümündeki verilere erişmek için:
+    var hizmetKategorileri = jsonData.hizmetKategorileri;
+    var hizmetlerContainer = document.getElementById('hizmetlerContainer');
+    // Her bir hizmet kategorisi için döngü oluştur
+    hizmetKategorileri.forEach(function(item) {
+        var title = item.title;
+        var icon = item.icon;
+        var links = item.links;
+
+        // Hizmet kategorisi için bir düğme (button) oluştur
+        var serviceCol = document.createElement('button');
+        serviceCol.className = 'service-col';
+
+        var content = document.createElement('div');
+        content.className = 'content';
+
+        // Eğer bir ikon varsa, ikonu ekleyin
+        if (icon) {
+            var iconElement = document.createElement('i');
+            iconElement.className = icon;
+            iconElement.style.color = item.iconColor || '#DBA11C';
+            content.appendChild(iconElement);
+        } else if (item.imageSrc) {
+            var img = document.createElement('img');
+            img.src = item.imageSrc;
+            img.alt = title;
+            img.width = 45; // Genişlik
+            img.height = 49;// Yükseklik
+            content.appendChild(img);
+        }
+        // Başlık (title) etiketi oluştur ve içeriği ata
+        var h3 = document.createElement('h3');
+        h3.textContent = title;
+        // Açılır içerik (dropdown content) bölümünü oluştur
+        var dropdownContent = document.createElement('div');
+        dropdownContent.className = 'dropdown-content';
+        // Her bir bağlantıyı açılır içerik içine ekleyin
+        links.forEach(function(link) {
+            var a = document.createElement('a');
+            a.href = link;
+            a.textContent = link;
+            dropdownContent.appendChild(a);
+        });
+        // İçeriği (content) düğmeye (button) ekleyin
+        content.appendChild(h3);
+        content.appendChild(dropdownContent);
+        serviceCol.appendChild(content);
+        // Hizmetleri (serviceCol) hizmetlerContainer'a ekleyin
+        hizmetlerContainer.appendChild(serviceCol);
+    });
+    </script>
+    
+    
+     
+     
+    
+    
+
+    
+</body>
+</html>

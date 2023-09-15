@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="icon" type="image/x-icon" href="images\DEU_Logo_beyaz.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c2cc11dfc2.js"></script>
+            
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images\DEU_Logo_beyaz.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="Course.html">Sık Kullanılanlar</a></li>
+                    <li><a href="Blog.html">Hizmetler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Bizimle İletişime Geçin</h1>
+    </section>
+<!--Contact Us-->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Üniversite Adresi</h5>
+                        <p> Alsancak, No: 144 35210, Cumhuriyet Blv, 35220 Konak
+                        </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+90(232) 412 12 12</h5>
+                        <p>Haftaiçleri sabah 8'den akşam 5'e kadar </p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>dokuzeyluluniversitesi@hs01.kep.tr</h5>
+                        <p>Yardımcı olmamız için mail atın</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Adınız ve Soyadınız"reqired>
+                    <input type="email" name="email" placeholder="Mail adresiniz"reqired>
+                    <input type="text" name="subject" placeholder="Konu başlığınız"reqired>
+                    <textarea rows="8" name="message" placeholder="Mesajınız" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">
+                        Mesaj Gönderin
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.466378466219!2d27.13434507636697!3d38.43069517410587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b9618efa2424c1%3A0x387c370f24511281!2sDokuz%20Eyl%C3%BCl%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1692968012085!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+<!---Footer-->
+<section class="footer">
+    <h4>Hakkımızda</h4>
+    <p>Altta yer alan telefon numaramız ve mail adresimize mail atarak yardım alabilirsiniz.
+       <br>Telefon:+90(232) 412 12 12<br>dokuzeyluluniversitesi@hs01.kep.tr
+    </p>
+    </div>
+    <br>
+    <p>@Deü Tüm Birimler</p>
+    </section>
+<!--- javascript code from here---> 
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu()
+        {
+            navlinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navlinks.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
